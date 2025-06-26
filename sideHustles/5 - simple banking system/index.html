@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<head>
+  <title>Simple Banking System</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    input, button { margin: 5px 0; display: block; }
+    #output { margin-top: 20px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>Banking System</h1>
+
+  <h3>Create Account</h3>
+  <input type="text" id="createName" placeholder="Account holder name">
+  <button onclick="createAccount()">Create Account</button>
+
+  <h3>Deposit</h3>
+  <input type="text" id="depositName" placeholder="Account holder name">
+  <input type="number" id="depositAmount" placeholder="Amount">
+  <button onclick="deposit()">Deposit</button>
+
+  <h3>Withdraw</h3>
+  <input type="text" id="withdrawName" placeholder="Account holder name">
+  <input type="number" id="withdrawAmount" placeholder="Amount">
+  <button onclick="withdraw()">Withdraw</button>
+
+  <h3>Check Balance</h3>
+  <input type="text" id="balanceName" placeholder="Account holder name">
+  <button onclick="checkBalance()">Check Balance</button>
+
+  <div id="output"></div>
+
+</body>
+<script src="main.js"></script>
+</html>
